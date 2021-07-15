@@ -189,7 +189,7 @@ def bubbleSort(array):
     \item \textbf{Explaination}
     \begin{itemize}
         \item scanning is done for (n)times
-        \item comparisons then swapping is done (\( \frac{n-1}{2} \))times on average.
+        \item comparisons between two elements then swapping is done (\( \frac{n-1}{2} \))times on average.
         \item when the list is in order only the statement for scanning is executed (n)times which gives \textbf{O(n)}
         \item Otherwise, n(\( \frac{n-1}{2} \)) gives \textbf{O(n\textsuperscript{2})} as n\textsuperscript{2} is highest order of n
     \end{itemize}
@@ -225,7 +225,7 @@ def selectionSort(array):
     \item \textbf{Explaination}
     \begin{itemize}
         \item There are two loops that are used for scanning.
-        \item The outr loop runs for (n) times.
+        \item The outer loop runs for (n) times.
         \item The inner loop runs for (n-1) times.
         \item Whether swapping is done or not, the loop for (n) lenght list runs for n(n-1) times.
         \item n(n-1)times gives \textbf{O(n\textsuperscript{2})} as n\textsuperscript{2} is of highest order.
@@ -392,9 +392,9 @@ def heapSort(array):
 \section{Comparision Between Different Sorting Algorithms}
 \subsection{Array List code}
 \begin{minted}[]{python}
-array1 = [1, 2, 3, 4, 5, 6]
-array2 = [1, 3, 6, 4, 5, 2]
-array3 = [6, 5, 4, 3, 2, 1]
+array1 = [1, 2, 3, 4, 5, 6]     # Ascending Order
+array2 = [1, 3, 6, 4, 5, 2]     # Random Order
+array3 = [6, 5, 4, 3, 2, 1]     # Descending Order
 \end{minted}
 \subsection{Main Driver Code}
 \begin{minted}[]{python}
@@ -454,7 +454,7 @@ if __name__ == "__main__":
 
 
 \subsection{Comparision Graphs}
-The graphs were made using Python Library MatplotLib and are from next page onwards.
+The graphs were made using Python Library MatplotLib and are from next page onwards.They are comparisions of worst Case Time Complexity.
 \clearpage
 \begin{figure}[h]
     \centerline{\includegraphics[width=7in,height=8.5in]{Insertation Sort_Bubble Sort.png}}
